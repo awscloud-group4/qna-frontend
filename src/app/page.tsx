@@ -38,7 +38,7 @@ export default function Home() {
   async function getQnaData() {
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/qna/questions/?date=${today}`
+        `${process.env.ap_url}/qna/questions/?date=${today}`
       );
       const qnaData = await response.json();
       console.log(qnaData);
